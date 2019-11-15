@@ -20,8 +20,4 @@
   	VALUES (#{naverseq},#{title},#{content})  
 </insert>
 
-
-
-   
-
 </mapper>
