@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Cgv {
-
+//test2
 	private String cgvseq, title, content, img;
 	
 }
