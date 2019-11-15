@@ -18,13 +18,4 @@ import com.stock.web.pxy.Trunk;
 public class BugsController {
 	private static final Logger logger = LoggerFactory.getLogger(BugsController.class);
 	
-	@Autowired BugsMapper bugsMapper;
-	@Autowired Trunk<Object> trunk;
-	
-	@GetMapping("/countArt")
-	public Map<?,?> countArt() {
-		Supplier<String> s = () -> bugsMapper.countBugs();
-		trunk.put(Arrays.asList("count"), Arrays.asList(s.get()));
-		return trunk.get();
-	}
 }
